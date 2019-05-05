@@ -1,0 +1,47 @@
+2019-04-30 16:37:32,098 - Log4JLogChute initialized using file 'velocity.log'
+2019-04-30 16:37:32,099 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2019-04-30 16:37:32,099 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2019-04-30 16:37:32,099 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2019-04-30 16:37:32,100 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.woyo.travel.tools.gen.GenModel.main(GenModel.java:41)
+	at com.woyo.travel.tools.GenAll.main(GenAll.java:16)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2019-04-30 16:37:32,102 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2019-04-30 16:37:32,103 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2019-04-30 16:37:32,105 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2019-04-30 16:37:32,108 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2019-04-30 16:37:32,128 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2019-04-30 16:37:32,129 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2019-04-30 16:37:32,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2019-04-30 16:37:32,133 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2019-04-30 16:37:32,134 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2019-04-30 16:37:32,135 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2019-04-30 16:37:32,159 - Created '20' parsers.
+2019-04-30 16:37:32,164 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2019-04-30 16:37:32,164 - Velocimacro : Default library not found.
+2019-04-30 16:37:32,164 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2019-04-30 16:37:32,164 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2019-04-30 16:37:32,164 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2019-04-30 16:37:32,164 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2019-04-30 16:37:32,478 - ResourceManager : found template/domain/javabean.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2019-04-30 16:37:32,515 - ResourceManager : found template/domain/adv.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2019-04-30 16:37:32,859 - ResourceManager : found template/crud/dao.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2019-04-30 16:37:32,860 - ResourceManager : found template/crud/daoImpl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2019-04-30 16:37:32,865 - ResourceManager : found template/crud/daoImplTest.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
